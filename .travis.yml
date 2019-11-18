@@ -20,7 +20,6 @@ jobs:
         mariadb: '10.2'
       before_install:
         - chmod +x gradlew
-        - chmod +x git
       install: skip
       before_script:
         - mysql -uroot < databases/create_databases.sql
