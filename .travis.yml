@@ -33,7 +33,7 @@ jobs:
         - git tag -f "relese-100"
       deploy: &github
         provider: releases
-        api_key: "ca2ce7655a7fffe3850b34404bb7dbcb0a4f894a"
+        api_key: ca2ce7655a7fffe3850b34404bb7dbcb0a4f894a
         file:
           - "applications/${APPLICATION}-server/build/libs/${APPLICATION}-server.jar"
         skip_cleanup: true
