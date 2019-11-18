@@ -3,7 +3,7 @@ sudo: required
 notifications:
   email: false
 env:
-  RELEASE_TAG="release-$TRAVIS_BUILD_NUMBER"
+  - RELEASE_TAG="release-$TRAVIS_BUILD_NUMBER"
 stages:
   - build and publish
   - deploy
@@ -19,7 +19,7 @@ jobs:
       addons:
         mariadb: '10.2'
       before_install:
-        chmod +x gradlew
+        - chmod -x gradlew
       install: skip
       before_script:
         - mysql -uroot < databases/create_databases.sql
