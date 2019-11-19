@@ -1,12 +1,12 @@
 applications:
-- name: tracker-backlog
+- name: tracker-backlog-samr
   path: ./applications/backlog-server/build/libs/backlog-server.jar
   routes:
-  - route: backlog-pal-sam.cfapps.io
+  - route: backlog-pal-samr.cfapps.io
   memory: 1G
   instances: 1
   env:
-    REGISTRATION_SERVER_ENDPOINT: http://backlog-pal-sam.cfapps.io
+    REGISTRATION_SERVER_ENDPOINT: http://backlog-pal-samr.cfapps.io
     JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ } }'
   services:
   - tracker-backlog-database
