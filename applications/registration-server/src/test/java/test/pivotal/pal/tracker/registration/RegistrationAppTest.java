@@ -11,7 +11,7 @@ public class RegistrationAppTest {
     @Test
     public void embedded() {
         App.main(new String[]{});
-
+//TEST
         RestTemplate restTemplate = new RestTemplate();
 
         assertThat(restTemplate.getForObject("http://localhost:8181/accounts?ownerId=0", String.class)).isEqualTo("[]");
