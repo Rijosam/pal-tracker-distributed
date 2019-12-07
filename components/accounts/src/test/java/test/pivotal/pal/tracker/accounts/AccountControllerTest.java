@@ -19,7 +19,7 @@ public class AccountControllerTest {
 
     private AccountDataGateway gateway = mock(AccountDataGateway.class);
     private AccountController controller = new AccountController(gateway);
-
+//test
     @Test
     public void testList() {
         AccountRecord recordToFind = accountRecordBuilder()
